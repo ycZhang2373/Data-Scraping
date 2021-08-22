@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html lang="zh-cmn-Hans" class="ua-windows ua-webkit">
+<head>
+<meta charset="UTF-8">
+<meta name="google-site-verification" content="ok0wCgT20tBBgo9_zat2iAcimtN4Ftf5ccsh092Xeyw" />       
+<meta name="description" content="提供图书、电影、音乐唱片的推荐、评论和价格比较，以及城市独特的文化 
+生活。">
+<meta name="keywords" content="豆瓣,小组,电影,同城,豆品,广播,登录豆瓣">
+<meta property="qc:admins" content="2554215131764752166375" />
+<meta property="wb:webmaster" content="375d4a17a4fa24c2" />
+<meta name="mobile-agent" content="format=html5; url=https://m.douban.com">
+<title>豆瓣</title>
+<script>
+function set_cookie(t,e,o,n){var i,a,r=new Date;r.setTime(r.getTime()+24*(e||30)*60*60*1e3),i="; expires="+r.toGMTString();for(a in t)document.cookie=a+"="+t[a]+i+"; domain="+(o||"douban.com")+"; path="+(n||"/")}function get_cookie(t){var e,o,n=t+"=",i=document.cookie.split(";");for(e=0;e<i.length;e++){for(o=i[e];" "==o.charAt(0);)o=o.substring(1,o.length);if(0===o.indexOf(n))return o.substring(n.length,o.length).replace(/\"/g,"")}return null}window.Douban=window.Douban||{};var Do=function(){Do.actions.push([].slice.call(arguments))};Do.ready=function(){Do.actions.push([].slice.call(arguments))},Do.add=Do.define=function(t,e){Do.mods[t]=e},Do.global=function(){Do.global.mods=Array.prototype.concat(Do.global.mods,[].slice.call(arguments))},Do.global.mods=[],Do.mods={},Do.actions=[],Douban.init_show_login=function(t){Do("dialog",function(){var t="/j/misc/login_form";dui.Dialog({title:"登录",url:t,width:/device-mobile/i.test(document.documentElement.className)?.9*document.documentElement.offsetWidth:350,cache:!0,callback:function(t,e){e.node.addClass("dialog-login"),e.node.find("h2").css("display","none"),e.node.find(".hd h3").replaceWith(e.node.find(".bd h3")),e.node.find("form").css({border:"none",width:"auto",padding:"0"}),e.update()}}).open()})},Do(function(){function t(t,e){var o=["ref="+encodeURIComponent(location.pathname)];for(var n in e)e.hasOwnProperty(n)&&o.push(n+"="+e[n]);window._SPLITTEST&&o.push("splittest="+window._SPLITTEST),localStorage.setItem("report",(localStorage.getItem("report")||"")+"_moreurl_separator_"+o.join("&"))}!function(){"localStorage"in window||(window.localStorage=function(){var t=document;if(!t.documentElement.addBehavior)throw"don't support localstorage or userdata.";var e="_localstorage_ie",o=t.createElement("input");o.type="hidden";var n=function(n){return function(){t.body.appendChild(o),o.addBehavior("#default#userData");var i=new Date;i.setDate(i.getDate()+365),o.expires=i.toUTCString(),o.load(e);var a=n.apply(o,arguments);return t.body.removeChild(o),a}};return{getItem:n(function(t){return this.getAttribute(t)}),setItem:n(function(t,o){this.setAttribute(t,o),this.save(e)}),removeItem:n(function(t){this.removeAttribute(t),this.save(e)}),clear:n(function(){for(var t,o=this.XMLDocument.documentElement.attributes,n=0;t=o[n];n++)this.removeAttribute(t.name);this.save(e)})}}())}(),$(window).one("load",function(){var t=localStorage.getItem("report");if(t){t=t.split("_moreurl_separator_");var e=function(o){return""==o?void e(t.shift()):void $.get("undefined"==typeof _MOREURL_REQ?"/stat.html?"+o:_MOREURL_REQ+"?"+o,function(){return t.length?(e(t.shift()),void localStorage.setItem("report",t.join("_moreurl_separator_"))):void localStorage.removeItem("report")})};e(t.shift())}}),window.moreurl=t,$(document).click(function(e){var o=e.target,n=$(o).data("moreurl-dict");n&&t(o,n)}),$.ajax_withck=function(t){return"POST"==t.type&&(t.data=$.extend(t.data||{},{ck:get_cookie("ck")})),$.ajax(t)},$.postJSON_withck=function(t,e,o){return $.post_withck(t,e,o,"json")},$.post_withck=function(t,e,o,n){return $.isFunction(e)&&(n=o,o=e,e={}),$.ajax({type:"POST",url:t,data:$.extend(e,{ck:get_cookie("ck")}),success:o,dataType:n||"text"})},$("html").click(function(t){var e=$(t.target),o=e.attr("class");o&&$(o.match(/a_(\w+)/gi)).each($.proxy(function(e,o){var n=Douban[o.replace(/^a_/,"init_")];"function"==typeof n&&(t.preventDefault(),n.call(this,t))},e[0]))})});
+Do.add('dialog', {path: 'https://img3.doubanio.com/f/shire/383a6e43f2108dc69e3ff2681bc4dc6c72a5ffb0/js/ui/dialog.js', type: 'js', requires: ['https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css']});
+Do.global('https://img3.doubanio.com/f/sns/b5793c2d7c298173d57ecf7d96708b5615336def/js/sns/fp/base.js', 'dialog');
+</script>
+<link rel="stylesheet" href="https://img3.doubanio.com/f/shire/32336a6003aedfb3aed372bf3ae0b51c92d12316/css/core/_init_.css">
+<link rel="stylesheet" href="https://img3.doubanio.com/f/sns/9d57748637cabc648a8ff1116bb0f2249560b6f8/css/sns/dist/anonymous_home/index.css">
+<style type="text/css">
+.rec_topics_name{
+    display: inline-block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    line-height: 1.3;
+    color: #3377aa;
+}
+.rec_topics_subtitle{
+    display: block;
+    margin-bottom: 15px;
+    font-size: 13px;
+    line-height: 1;
+    color: #aaaaaa;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.rec_topics_label{
+    transform: translateY(-0.5px);
+    display: inline-block;
+    font-size: 13px;
+    margin-left: 2px;
+}
+.rec_topics{
+    line-height: 1;
+    margin-bottom: 15px;
+}
+.rec_topics:last-child{
+    margin-bottom: 0;
+}
+.rec_topics_label_ad{
+    color: #c9c9c9;
+    -moz-transform: scale(0.91);
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+}
+
+html[class*=ua-ff] .rec_topics_subtitle{
+    line-height: 14px;
+}
+
+</style>
+</head>
+
+<body class=''>
+
+
+<div>
+  <div id="anony-nav-banner"
+    style="clear: both;overflow: hidden;background-color: #EDF4EC;margin-bottom: 30px;margin-top: -30px;">
+    <h1 id="douban-logo"
+      style="height: 20px;width: 102px;margin: 7px 13px;background-size: contain;">
+      <a href="https://www.douban.com"
+        style="height: 20px;">豆瓣</a>
+    </h1>
+  </div>
+  <div id="anony-nav">
+    <div class="anony-nav-links">
+      <ul>
+        <li>
+          <a target="_blank" class="lnk-book" href="https://book.douban.com">豆瓣读书</a>
+        </li>
+        <li>
+          <a target="_blank" class="lnk-movie" href="https://movie.douban.com">豆瓣电影</a>
+        </li>
+        <li>
+          <a target="_blank" class="lnk-music" href="https://music.douban.com">豆瓣音乐</a>
+        </li>
+        <li>
+          <a target="_blank" class="lnk-events" href="https://www.douban.com/location/">豆瓣同城</a> 
+        </li>
+        <li>
+          <a target="_blank" class="lnk-group" href="https://www.douban.com/group/">豆瓣小组</a>     
+        </li>
+        <li>
+          <a target="_blank" class="lnk-read" href="https://read.douban.com">豆瓣阅读</a>
+        </li>
+        <li>
+          <a target="_blank" class="lnk-fm" href="https://douban.fm">豆瓣FM</a>
+        </li>
+        <li>
+          <a target="_blank" class="lnk-shijian" href="https://time.douban.com/?dt_time_source=douban-web_anonymous_index_top_nav">豆瓣时间</a>
+        </li>
+        <li>
+          <a target="_blank" class="lnk-market" href="https://market.douban.com?utm_campaign=anonymous_top_nav&utm_source=douban&utm_medium=pc_web">豆瓣豆品</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="site-name" title="豆瓣网"
+      style="display: inline-block; line-height: 24px; height: 24px; margin-top: 4px;margin-right: 24px;width: 73px;background-image: url(https://img3.doubanio.com/f/sns/714b8751a533ef592bea5cd4603dbb9e713ded61/pics/sns/sitename.png);background-size: contain; background-repeat: no-repeat;text-indent: -999em;">
+      豆瓣网
+    </div>
+
+    <div class="anony-srh">
+    <form action="https://www.douban.com/search" method="get">
+      <span class="inp"><input type="text" maxlength="60" size="12" placeholder="书籍、电影、音乐、小
+组、小站、成员" name="q" autocomplete="off"></span>
+    <span class="bn"><input type="submit" value="搜索"></span>
+    </form>
+    </div>
+  </div>
+</div>
+
+
+<div id="anony-reg-new" style="background-image: url(https://img9.doubanio.com/view/puppy_image/raw/public/1771365ca98ig9er706.jpg)">
+  <div class="wrapper">
+    <div class="login">
+      <iframe style="height: 300px; width: 300px;" frameborder='0' src="//accounts.douban.com/passport/login_popup?login_source=anony"></iframe>
+    </div>
+    <div class="app">
+      <p class="app-title">豆瓣<span>7.0</span></p>
+      <p class="app-slogan"></p>
+      <a href="https://www.douban.com/doubanapp/app?channel=nimingye" class="lnk-app">下载豆瓣 App</a>
+      <div class="app-qr">
+        <a href="javascript: void 0;" class="lnk-qr" id="expand-qr"><img src="https://img3.doubanio.com/f/sns/0c708de69ce692883c1310053c5748c538938cb0/pics/sns/anony_home/icon_qrcode_green.png" width="28" height="28" /></a>
+        <div class="app-qr-expand">
+          <img src="https://img3.doubanio.com/f/sns/1cad523e614ec4ecb6bf91b054436bb79098a958/pics/sns/anony_home/doubanapp_qrcode.png" width="160" height="160" />
+          <p>iOS / Android 扫码直接下载</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+  Do(function() {
+    var app_qr = $('.app-qr');
+    app_qr.hover(function() {
+      app_qr.addClass('open');
+    }, function() {
+      app_qr.removeClass('open');
+    });
+  });
+  </script>
+</div>
+
+
+
+
+
+<div id="anony-sns" class="section">
+  <div class="wrapper">
+
+<!-- douban ad begin -->
+<div id="dale_anonymous_homepage_top_for_crazy_ad"></div>
+<!-- douban ad end -->
+
+
+  <div class="side">
+  <div style="margin:10px 0px;">
+    <div id="dale_anonymous_homepage_right_top"></div>
+  </div>
+  <div class="online">
+    <ul>
+
+
+
+
+
+
+
+<div class="mod">
+
+    <h2>
+        热门话题
+            &nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;     
+            <span class="pl">&nbsp;(
+
+                    <a href="/gallery/" target="_self">去话题广场</a>
+                ) </span>
+    </h2>
+
+
+    <ul>
+
+            <li class="rec_topics">
+                    <a href="https://www.douban.com/gallery/topic/553/?from=hot_topic_anony_sns" class="rec_topics_name">看展记</a>
+
+                    <span class="rec_topics_subtitle">6215.2万次浏览</span>
+            </li>
+            <li class="rec_topics">
+                    <a href="https://www.douban.com/gallery/topic/345503/?from=hot_topic_anony_sns" class="rec_topics_name">与蚊虫斗智斗勇的故事</a>
+
+                    <span class="rec_topics_subtitle">新话题 · 2.9万次浏览</span>
+            </li>
+            <li class="rec_topics">
+                    <a href="https://www.douban.com/gallery/topic/344518/?from=hot_topic_anony_sns" class="rec_topics_name">于他乡兴起的莼鲈之思</a>
+
+                    <span class="rec_topics_subtitle">3.6万次浏览</span>
+            </li>
+            <li class="rec_topics">
+                    <a href="https://www.douban.com/g
